@@ -1,0 +1,146 @@
+.grid-container {
+    display: grid;
+    grid-template: repeat(8, [row] minmax(120px, 1fr)) / repeat(4, [col] 1fr);
+      grid-gap: 20px;
+  }
+
+  .header, .title, .banners, .input, .result{
+    align-items: center;
+    line-height: 1;
+    padding: 5px
+  }
+  
+  .header {
+    grid-column: col 1 / span 4;
+    grid-row: row 1;
+    font-family: 'Codystar', cursive;  
+    font-size:60px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .title {
+    grid-column: col 1 / span 4;
+    grid-row: row 2/ span 2;
+    text-align: left;
+    color: black;
+    justify-content: center;
+    text-align: center
+  }
+
+  .banners {
+    grid-column: col 1 / span 4;
+    grid-row: row 4;
+    display: grid;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    text-align: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: row;
+  }
+
+  .input {
+    text-align: centre;
+    grid-row: row 5 ;
+    display: grid;
+  }
+
+  .TitleResult {
+    text-align: centre;
+    grid-row: row 6 ;
+    display: grid;
+  }
+  
+  .result {
+    text-align: centre;
+    grid-row: row 7 ;
+    display: grid;
+  }
+
+  .download {
+    text-align: centre;
+    grid-row: row 8 ;
+    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    width: 90px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  body {
+    background-color: powderblue;
+  }
+
+  .header   {
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 500%; 
+    color: rgb(0, 0, 0);
+  }
+
+  h2   {
+    text-align: center; 
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+  }
+
+  p    {
+    text-align: center;
+    font-family: 'Alfa Slab One';
+    color: black;
+  }
+
+  label    {
+    font-family: 'Alfa Slab One';
+    color: black;
+  }
+
+  textarea, button {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  .controls {
+    display: flex; 
+  }
+
+  .radio {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+  }
